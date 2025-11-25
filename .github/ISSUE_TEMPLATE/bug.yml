@@ -1,22 +1,28 @@
 name: "🐞 Bug Report"
 description: "Report a bug with as much detail as you can. Please attach screenshots or logs if available."
-title: "[Bug] "
+title: "[Bug] Report Bug Form"
 labels: ["bug"]
 assignees: []
 body:
+  - type: input
+    id: email
+    attributes:
+      label: Email Address
+    validations:
+      required: true
   - type: dropdown
     id: app
     attributes:
       label: "Which app?"
-      description: "Choose the app where the bug appears"
       options:
         - "Nextlivin Manage"
         - "Nextlivin Tenant"
+      validations:
+      required: true
   - type: dropdown
     id: feature
     attributes:
       label: "Feature"
-      description: "Which feature affected?"
       options:
         - "Home"
         - "Dashboard"
@@ -33,13 +39,16 @@ body:
         - "Team Chat"
         - "Chat Bot"
         - "My Work"
-        - "General"      
+        - "General"  
+      validations:
+      required: true
   - type: input
     id: version
     attributes:
       label: "App version"
-      description: "Example: 1.0.3"
       placeholder: "e.g. 1.0.3"
+      validations:
+      required: true
   - type: dropdown
     id: platform
     attributes:
@@ -47,18 +56,20 @@ body:
       options:
         - "Android"
         - "iOS"
-        - "Web"        
+        - "Web" 
+      validations:
+      required: true
   - type: input
     id: device
     attributes:
       label: "OS"
-      description: "OS version (optional)"
       placeholder: "e.g. Android 13"
+      validations:
+      required: true
   - type: textarea
     id: steps
     attributes:
       label: "Bug Description"
-      description: "You can describe how to reproduce the bug"
       placeholder: |
         1. Go to ...
         2. Tap ...
@@ -67,15 +78,9 @@ body:
     id: expected
     attributes:
       label: "Expected result"
-      description: "What did you expect to happen?"
   - type: textarea
     id: attachments
     attributes:
       label: "Attachments (screenshots / videos)"
       description: |
-        Upload images/videos with full screen.
-  - type: input
-    id: reporter_email
-    attributes:
-      label: "Reporter email"
-      description: "Enter your email"
+        Upload images/videos with app full screen.
