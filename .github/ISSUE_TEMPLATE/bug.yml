@@ -31,7 +31,7 @@ body:
         - "Notifications"
         - "Profile"
         - "Team Chat"
-        - "Chat Bot
+        - "Chat Bot"
         - "My Work"
         - "General"      
   - type: input
