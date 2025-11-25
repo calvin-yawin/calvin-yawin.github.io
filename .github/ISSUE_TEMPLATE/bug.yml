@@ -2,6 +2,7 @@ name: "🐞 Bug Report"
 description: "Report a bug with as much detail as you can. Please attach screenshots or logs if available."
 title: "[Bug] "
 labels: ["bug"]
+type: ["Bug"]
 assignees: []
 body:
   - type: dropdown
